@@ -10,7 +10,7 @@ class Tenant
 	end
 
 	def to_s		# To make the tenant output look better as a string
-		puts "#{ @name.upcase }, #{ @gender }, is #{ @age }-years-old"
+		 "#{ @name.upcase }, #{ @gender }, is #{ @age }-years-old"
 	end
 
 end

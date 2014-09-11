@@ -15,8 +15,7 @@ class Apartment
 	end
 
 	def to_s
-		puts "Apartment #{name} is #{sqft} square feet and has #{tenants.length} occupants."
-		puts "It has #{num_bedrooms} bedrooms and #{num_bathrooms} bathrooms."
+		 "Apartment #{name} is #{sqft} square feet and has #{tenants.length} occupant(s). It has #{num_bedrooms} bedroom(s) and #{num_bathrooms} bathroom(s)."
 		# puts "The price is $#{price} per month."
 end
 end
