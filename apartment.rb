@@ -1,3 +1,4 @@
+
 class Apartment 
 	attr_accessor :name, :price, :sqft, :num_bathrooms, :num_bedrooms, :tenants
 
@@ -15,7 +16,7 @@ class Apartment
 	end
 
 	def to_s
-		 "Apartment #{name} is #{sqft} square feet and has #{tenants.length} occupant(s). It has #{num_bedrooms} bedroom(s) and #{num_bathrooms} bathroom(s)."
+		 "Apartment #{name}, is #{sqft} square feet and has #{tenants.length} occupant(s). It has #{num_bedrooms} bedroom(s) and #{num_bathrooms} bathroom(s)."
 		# puts "The price is $#{price} per month."
 end
 end
