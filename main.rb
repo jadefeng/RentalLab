@@ -64,9 +64,23 @@ $buildings.first.apartments[apt.name].tenants << chris
 #######################################################
 
 def menu
-	puts " "
 	puts "--------------------------------"
 	puts "Welcome to the Real Estate Database."
+	puts "         _._._._._._._._._._._._._._._._._      "
+	puts "         | ___   ___    ___    ___   ___ |      "
+	puts "         ||_|_| |_|_|  |_|_|  |_|_| |_|_||      "
+	puts "         |IIIII_IIIII__IIIII__IIIII_IIIII|      "     
+	puts "         | ___   ___    ___    ___   ___ |     "
+	puts "         ||_|_| |_|_|  |_|_|  |_|_| |_|_||     "
+	puts "         |IIIII_IIIII__IIIII__IIIII_IIIII|     "
+	puts "         | ___   ___    ___    ___   ___ |     "
+	puts "         ||_|_| |_|_|  |_|_|  |_|_| |_|_||     "
+	puts "         |IIIII_IIIII__IIIII__IIIII_IIIII|    /)"
+	puts "         | ___   ___   _____   ___   ___ | __/ ),"
+	puts "   ~ ^~^ ||_|_| |_|_|  o~|~o  |_|_| |_|_||  ~^~^"
+	puts "  . ' .'.|IIIII_IIIII__|_|_|__IIIII_IIIII|'^~^'.',"
+	puts " .,' , . |             =====             |.'.'.'. "
+	puts " "
 	puts "What would you like to do?"
 	puts "1. List all avaliable buildings."
 	puts "2. List all avaliable apartments."
@@ -120,18 +134,14 @@ until menu_option == 'q'
 	when '4' 	# Add a new building
 		puts "What is the address?"
 		@address_n = gets.chomp
-
 		puts "What is the style?"
 		@style_n = gets.chomp
-
 		puts "Is there a doorman? (Y/N)"
 		@doorman = gets.chomp.downcase
-		@doorman_n = @doorman == "y"		
-
+			@doorman_n = @doorman == "y"		
 		puts "Is there an elevator? (Y/N)"
 		@elevator = gets.chomp.downcase
-		@elevator_n = @elevator == "y" 
-
+			@elevator_n = @elevator == "y" 
 		puts "How many floors are there?"
 		@floors_n = gets.chomp
 
@@ -228,7 +238,7 @@ until menu_option == 'q'
 		menu_option = read_selection
 	
 	else 
-		puts "Sorry. That was not an option."	
+		puts "Sorry. That was not an option. Let's try again!"	
 		menu_option = read_selection
 
 	end
@@ -241,8 +251,8 @@ puts "You just quit the system! Have a great day!"
 
 ##########################################################################################
 
-# require 'pry'
-# binding.pry
+require 'pry'
+binding.pry
 
 ##########################################################################################
 # # building.apartments is a hash
